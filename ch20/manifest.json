@@ -1,0 +1,20 @@
+{
+    "name": "Seoul Event Notifier",
+    "short_name": "Event Notifier",
+    "theme_color": "#007bff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": ".",
+    "icons": [
+        {
+            "src": "images/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icons/icon-310x310.png",
+            "sizes": "310x310",
+            "type": "image/png"
+        }
+    ]
+}

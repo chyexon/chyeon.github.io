@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Event Notifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007bff">
+    <style>
+        .centered-div {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <p>2023810069 장채현</p>
+    <div class="container">
+        <div class="centered-div">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="good.jpg" alt="logo" style="width: 40px;">
+                </a>
+                <h3 style="color: rgb(0, 0, 0);">서울특별시 행사 알리미</h3>
+            </nav>
+        </div>
+        <div class="row mt-2">
+            <select id="gu" class="form-select" aria-label="Default select example">
+                <option selected>공연 분야</option>
+                <option value="클래식">클래식</option>
+                <option value="콘서트">콘서트</option>
+                <option value="연극">연극</option>
+                <option value="뮤지컬/오페라">뮤지컬/오페라</option>
+                <option value="무용">무용</option>
+                <option value="교육/체험">교육/체험</option>
+                <option value="전시/미술">전시/미술</option>
+                <option value="축제-문화/예술">축제-문화/예술</option>
+                <option value="축제-시민화합">축제-시민화합</option>
+                <option value="축제-기타">축제-기타</option>
+                <option value="독주/독창회">독주/독창회</option>
+                <option value="국악">국악</option>
+                <option value="영화">영화</option>
+                <option value="기타">기타</option>
+            </select>
+        </div>
+        <div class="row mt-2">
+            <h5 style="text-align: center;">
+                관람하고 싶은 공연 분야를 선택하고 검색 버튼을 누르세요.
+            </h5>
+        </div>
+        <div style="text-align: center;">
+            <input class="btn btn-outline-primary" type="button" id="what" value="검색">
+        </div>
+        <div id="dataDiv" class="d-flex flex-wrap mt-3 p-2 ustify-content-between centered-div"></div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+            .then(() => console.log("Service Worker Registered"))
+            .catch(error => console.log("Service Worker Registration Failed", error));
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
