@@ -1,0 +1,1 @@
+/api/*  http://openapi.seoul.go.kr:8088/:splat  200

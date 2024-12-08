@@ -1,0 +1,21 @@
+{
+    "name": "SoundBoard",
+    "short_name": "SoundBoard",
+    "theme_color": "#d36060",
+    "background_color": "#f08e8e",
+    "display": "standalone",
+    "start_url": ".",
+    "icons": [
+        {
+            "src": "images/icons/icon-192x192.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icons/icon-196x196.png",
+            "sizes": "32x32",
+            "type": "image/png"    
+        }
+    ],
+    "splash_pages": null
+}

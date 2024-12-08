@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서울특별시 공공자전거 대여소</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p class="user-info">2023810069 장채현</p>
+    <h1>서울특별시 공공자전거 대여소</h1>
+
+    <div class="search-container">
+      <input type="text" id="search" placeholder="대여소 이름 또는 주소로 검색" />
+      <button id="searchButton">검색</button>
+    </div>
+
+    <div id="stationList" class="station-list">
+    </div>
+
+    <div id="stationDetails" class="station-details" style="display: none;">
+      <h2>대여소 정보</h2>
+      <p id="details"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
